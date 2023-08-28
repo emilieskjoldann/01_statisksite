@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #e47c8ca0;
+
+  margin-top: 2rem;
+}
+h1 {
+  font-family: "corbenbold";
+  font-size: 8rem;
+  font-weight: lighter;
+  color: #ea902f;
+  text-align: center;
+}
+.body1 {
+  background-image: url(image/Artboard\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  margin: 2rem 10rem 3rem 10rem;
+}
+header a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 5rem;
+  color: plum;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+h3 {
+  font-size: 2rem;
+  color: plum;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+p {
+  color: rgb(136, 136, 136);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+/************* INDEX *************/
+ul {
+  font-size: 3.5rem;
+  display: flex;
+  list-style: none;
+  gap: 20rem;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  background-color: plum;
+  border-radius: 8rem;
+  text-align: center;
+}
+.forside {
+  margin-top: 18rem;
+}
+
+/********************** CATEGORIE *******************/
+.categorielist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 3rem;
+  gap: 2rem;
+}
+.categorielist a {
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  background-color: plum;
+  border-radius: 8rem;
+  text-align: center;
+}
+
+/***************** PRODUCTLIST *******************/
+.productlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+article {
+  margin-top: 3rem;
+}
+article a {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #f0491e;
+}
+
+/****************** PRODUCT *********************/
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10rem;
+  gap: 3rem;
+}
