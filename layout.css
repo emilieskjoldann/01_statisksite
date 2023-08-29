@@ -104,6 +104,17 @@ article a {
   color: #f0491e;
 }
 
+article.soldOut::after {
+  content: "SOLD OUT";
+  padding: 1em;
+  background-color: plum;
+}
+
+article.discount::after {
+  content: "-34%";
+  padding: 1em;
+  background-color: plum;
+}
 /****************** PRODUCT *********************/
 .product {
   display: grid;
