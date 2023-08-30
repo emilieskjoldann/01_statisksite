@@ -23,11 +23,14 @@ function showProduct(product) {
     //produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
   }
-  //appende
-  document.querySelector(".productlist").appendChild(copy);
 
   //produkt er på tilbud
-  if (product.discount) {
-    // copy.querySelector("article").classList.add("discount");
+  if (product.discount > 0) {
+    copy.querySelector(".discount").textContent = product.discount;
+  } else {
+    copy.querySelector(".remove_discount").remove();
   }
+  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
+  //appende
+  document.querySelector(".productlist").appendChild(copy);
 }
