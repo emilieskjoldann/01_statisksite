@@ -74,18 +74,18 @@ ul a {
 }
 
 /********************** CATEGORIE *******************/
-.categorielist {
+.categorielist ol {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   font-size: 3rem;
   gap: 2rem;
 }
 .categorielist a {
   text-decoration: none;
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: plum;
-  border-radius: 8rem;
+  border-radius: 4rem;
   text-align: center;
 }
 
