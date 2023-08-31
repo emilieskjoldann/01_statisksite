@@ -1,10 +1,15 @@
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
 
-fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
-  .then((res) => res.json())
-  .then(showProducts);
-
+if (category == null) {
+  fetch("https://kea-alt-del.dk/t7/api/products")
+    .then((res) => res.json())
+    .then(showProducts);
+} else {
+  fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
+    .then((res) => res.json())
+    .then(showProducts);
+}
 function showProducts(products) {
   //looper og kalder showProduct
   products.forEach(showProduct);
@@ -17,6 +22,7 @@ function showProduct(product) {
   //lav en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
+
   copy.querySelector("h3").textContent = product.productdisplayname;
   copy.querySelector(".smallProduct .pris").textContent = product.price;
   copy.querySelector(".smallProduct .articletype").textContent = product.articletype;
